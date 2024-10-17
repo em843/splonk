@@ -21,10 +21,14 @@ function App() {
     console.log("guess");
     setGuess("");
     e.preventDefault();
-    const randomIndex = Math.floor(Math.random() * colorArray.length);
-    const color = colorArray[randomIndex];
-    const newCircle = { color: color };
-    setCircles([...circles, newCircle]);
+    let newCircles = [];
+    for (let i = 0; i < 4; i++) {
+      const randomIndex = Math.floor(Math.random() * colorArray.length);
+      const color = colorArray[randomIndex];
+      const newCircle = { color: color };
+      newCircles.push(newCircle);
+    }
+    setCircles([...circles, ...newCircles]);
   }
   return (
     <div className="App">
