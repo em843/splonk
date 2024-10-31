@@ -1,0 +1,21 @@
+{
+  "name": "splonk-2.0",
+  "version": "1.0.0",
+  "private": true,
+  "description": "splonk-2.0",
+  "keywords": [
+    "gatsby"
+  ],
+  "scripts": {
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
+  },
+  "dependencies": {
+    "gatsby": "^5.13.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
